@@ -1,2 +1,3 @@
 FROM nginx
-COPY . /usr/share/nginx/html
+RUN apt install git -y
+RUN git clone https://github.com/p9rahul/Project1/ /usr/share/nginx/html
